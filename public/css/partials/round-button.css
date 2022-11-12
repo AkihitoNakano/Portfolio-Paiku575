@@ -1,0 +1,31 @@
+button {
+  cursor: pointer;
+  background-color: var(--bg-color);
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 1px solid var(--font-color);
+  font-size: 15px;
+  /* transition: all 0.1s linear; */
+}
+
+button:enabled:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.follow-btn:hover {
+  background-color: var(--button-color);
+  color: #fff;
+  font-weight: bold;
+}
+
+.unfollow-btn:hover {
+  background-color: var(--alert-color);
+  color: #fff;
+  font-weight: bold;
+}

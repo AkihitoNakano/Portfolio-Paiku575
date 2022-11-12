@@ -1,0 +1,171 @@
+/* スクロールウィンドウの上書き */
+
+.main-scroll-container {
+  -ms-overflow-style: thin;
+  scrollbar-width: thin;
+}
+
+.main-scroll-container::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 40px 40px;
+}
+
+/* ボタンの上書き */
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.alert {
+  font-weight: bold;
+  color: var(--alert-color);
+}
+
+.confirm-alert {
+  display: none;
+}
+
+.confirm-alert.show {
+  display: flex;
+}
+
+.changePass-alert {
+  display: none;
+}
+.changePass-alert.show {
+  display: flex;
+}
+
+.message {
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+.changePass-msg {
+  display: none;
+}
+
+.changePass-msg.show {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  background-color: transparent;
+  border: 1px solid var(--font-color);
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+input:focus {
+  outline: 2px var(--button-color) solid;
+}
+
+.forget-pass {
+  cursor: pointer;
+  color: var(--button-color);
+  font-size: 5px;
+  font-weight: bold;
+}
+
+form button {
+  background-color: var(--button-color);
+  color: #fff;
+  width: 30%;
+  padding: 7px 0;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.display-account {
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  padding: 40px 0;
+  margin: 70px 0;
+}
+
+.text-title {
+  font-weight: bold;
+}
+
+.show-account {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.show-account:last-child {
+  margin-bottom: 0px;
+}
+
+.delete-account {
+  margin-top: 60px;
+}
+
+.explain-del-acc {
+  margin: 40px 0;
+}
+
+.explain-del-acc p {
+  margin: 1rem 0;
+}
+
+.request-archive {
+  background-color: var(--button-color);
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+}
+
+.del-acc-btn {
+  color: var(--alert-color);
+  border: 1px solid var(--alert-color);
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 40px;
+  transition: all 0.1s linear;
+}
+
+.del-acc-btn:hover {
+  background-color: var(--alert-color);
+  color: #fff;
+}
+
+.del-acc-alert {
+  display: none;
+  margin: 5px 0;
+}
+
+.del-acc-alert.show {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .account-container {
+    width: 100%;
+  }
+}

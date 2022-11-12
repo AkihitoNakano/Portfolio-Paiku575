@@ -1,0 +1,152 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+/* base color */
+@import url('./partials/root-color.css');
+/* button */
+@import url('./partials/round-button.css');
+/* navigation */
+@import url('./partials/nav.css');
+/* self-icon */
+@import url('./partials/self-icon.css');
+
+/* base-layout */
+@import url('./partials/base-layout.css');
+/* left-side-bar */
+@import url('./partials/left-side.css');
+/* right-side-bar */
+@import url('./partials/right-side.css');
+
+/* mobile base */
+@import url('./mobile/mobile-base.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.theme-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.theme-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.theme-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+h1 {
+  margin: 40px;
+}
+
+.theme-tag-container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--font-color);
+  border-radius: 5px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  overflow: hidden;
+}
+
+.theme-tag-container:hover {
+  background-color: var(--tagHover-color);
+  transform: scale(1.02);
+}
+
+.theme-tag {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0 10px 0;
+}
+
+.theme-grid-2 .theme-tag {
+  font-size: 20px;
+}
+
+.theme-grid-3 .theme-tag {
+  font-size: 15px;
+}
+
+.show-post-container {
+  margin: 10px 0 20px 0;
+}
+
+.post-num {
+  font-weight: bold;
+}
+
+@media (max-width: 1050px) {
+  .theme-tag-container {
+    height: 200px;
+  }
+  .theme-tag {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .theme-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .theme-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .theme-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* モバイル */
+@media (max-width: 420px) {
+  .theme-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .theme-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .theme-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .theme-tag-container {
+    height: 150px;
+  }
+}

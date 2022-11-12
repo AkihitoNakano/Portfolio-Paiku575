@@ -1,0 +1,34 @@
+{{>header}}
+    <link rel="stylesheet" href="/css/search-user.css">
+    <link rel="stylesheet" href="/css/utils/bar-loader.css">
+    <title>アカウントを探す</title>
+</head>
+<body>
+  <main>
+    <div class='forget-pass-container'>
+      <div class='forget-pass-wrap'>
+        <div class="img"></div>
+        <h2>アカウントを探す</h2>
+        <div class="form-container">
+          <label for='email'>登録しているメールアドレスを入力して下さい</label>
+          <input type='text' id='email' name='email' placeholder='メールアドレスを入力して下さい' />
+          <button id="submit"><div>送信</div></button>
+        </div>
+        <div class="message"></div>
+
+      </div>
+      <div class="bar-loader"></div>
+
+
+    </div>
+      <div class="check-your-email">
+        <h1>登録したメールアドレスに、確認メールを送信しました。</h1>
+        <p>届いていない場合は迷惑メールフォルダを確認してみるようお願いします。</p>
+      </div>
+
+  </main>
+ 
+
+    <script type="module" src="/js/searchUser.js"></script>
+</body>
+</html>

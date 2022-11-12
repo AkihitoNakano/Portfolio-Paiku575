@@ -1,0 +1,41 @@
+<div id="modal-profile-update-bg">
+  <div class="modal-update-profile-container">
+    <h2>プロフィールを編集</h2>
+    <div id="update-avatar">
+      <img class="self-icon md-prof" src="{{userProfile.avatar}}" alt="avatar">
+      <label for="upload-avatar" class="custom-file-upload"></label>
+      <input type="file" name="avatar" id="upload-avatar"></input>
+    </div>
+    <small class="md-update-alert">画像は2MB以内にしてください</small>
+
+    <div class="input-container update-displayName-container">
+      <div class="count-text">
+        <label for="update-name-input">名前</label>
+        <p><span class="input-count" id="input-count-name">120</span>/ 12</p>  
+      </div>
+      <input type="text" id="update-name-input" maxlength="12" value="{{userProfile.displayName}}" >
+    </div>
+
+    <div class="input-container update-place-container">
+      <div class="count-text">
+        <label for="update-place-input">場所</label>
+        <p><span class="input-count" id="input-count-place">120</span>/ 30</p>  
+      </div>
+        <input type="text" id="update-place-input" maxlength="30" value="{{userProfile.place}}">
+    </div>
+    
+    <div class="input-container update-self-intro-container">
+      <div class="count-text">
+        <label for="self-intro-input">自己紹介</label>
+        <p><span class="input-count" id="input-count">120</span>/ 140</p>  
+      </div>
+      <textarea type="text" name="self-intro" id="self-intro-input" cols="60" rows="3" maxlength="140">{{userProfile.selfIntroduction}}</textarea>
+    </div>
+
+    <div class="bar-loader"></div>
+    <button id="update-profile-btn">アップデート</button>
+    <div id="update-profile-close-btn">×</div>
+
+  </div>
+
+</div>

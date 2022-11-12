@@ -1,0 +1,50 @@
+.about-container {
+  background-color: var(--bg-color);
+}
+
+.about-container h2 {
+  color: var(--font-color);
+  margin: 60px 0 20px;
+}
+
+.about-container h2::before {
+  content: '|';
+  color: var(--button-color);
+  background-color: var(--button-color);
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.about-container p {
+  line-height: 28px;
+}
+
+.post-example {
+  color: var(--font-color);
+  background-color: var(--card-color);
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.separate {
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.separate p {
+  color: var(--font-color);
+  letter-spacing: 2px;
+}
+
+.tag-example {
+  background-color: var(--card-color);
+  color: var(--button-color);
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px 0;
+}

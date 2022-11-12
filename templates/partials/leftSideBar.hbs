@@ -1,0 +1,25 @@
+<div class='left-side-container'>
+  <div class='ticket-wrap'>
+    <div class='icon ticket-left'></div>
+    <p id='ticket-num'>{{tickets}}</p>
+  </div>
+  <ul>
+    {{#if me}}
+      <li><a href='/{{me.accountName}}'>プロフィール</a></li>
+    {{else}}
+      <li><a href='/{{userProfile.accountName}}'>プロフィール</a></li>
+    {{/if}}
+    <li><a href='/user/settings'>設定</a></li>
+  </ul>
+
+  {{! レスポンシブ対応 }}
+  <div class='icon-container'>
+    <div class='left-icon icon-ticket-num'>{{tickets}}</div>
+    {{#if me}}
+      <div class='left-icon link profile-link' name='{{me.accountName}}'></div>
+    {{else}}
+      <div class='left-icon link profile-link' name='{{userProfile.accountName}}'></div>
+    {{/if}}
+    <div class='left-icon link settings-link'></div>
+  </div>
+</div>

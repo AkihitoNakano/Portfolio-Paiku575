@@ -1,0 +1,18 @@
+.load-card-container {
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  width: 100%;
+  margin-bottom: 500px;
+}
+
+.load-card-btn {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px;
+}
+
+.load-card-btn:hover {
+  background-color: var(--tagHover-color);
+}

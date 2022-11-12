@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+/* base color */
+@import url('./partials/root-color.css');
+/* button */
+@import url('./partials/round-button.css');
+/* navigation */
+@import url('./partials/nav.css');
+/* self-icon */
+@import url('./partials/self-icon.css');
+
+/* base-layout */
+@import url('./partials/base-layout.css');
+/* lef-side-bar */
+@import url('./partials/left-side.css');
+/* right-side-bar */
+@import url('./partials/right-side.css');
+/* profile self */
+@import url('./partials/profile-self.css');
+
+/* card */
+@import url('./partials/card.css');
+/* profile-vote layout */
+@import url('./partials/profile-vote.css');
+/* modal-profile-update */
+@import url('./partials/modal-update-profile.css');
+/* load card */
+@import url('./partials/loadCard.css');
+/* loader */
+@import url('./partials/loading.css');
+/* loading card */
+@import url('./utils/loadingCard.css');
+/* bar type loader */
+@import url('./utils/bar-loader.css');
+
+/* mobile base */
+@import url('./mobile/mobile-base.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+
+.card-container {
+  padding: 50px 0 0 0;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

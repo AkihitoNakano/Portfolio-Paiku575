@@ -1,0 +1,3 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/paiku-357914/go-7-go_paiku-app', '.']

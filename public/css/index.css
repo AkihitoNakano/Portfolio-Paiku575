@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+/* base color */
+@import url('./partials/root-color.css');
+
+/* index header */
+@import url('./partials/indexHeader.css');
+/* index footer */
+@import url('./partials/indexFooter.css');
+/* self-icon */
+@import url('./partials/self-icon.css');
+/* card */
+@import url('./partials/card.css');
+
+:root {
+  --sub-color: #9db1aa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 0;
+  overflow: scroll;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  position: relative;
+  width: 35%;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.container p {
+  color: var(--font-color);
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 100px;
+}
+
+.create-account {
+  margin-top: 20px;
+}
+
+#sign-up {
+  cursor: pointer;
+  position: absolute;
+  background-color: #80b5a2;
+  color: #fff;
+  right: 0;
+  font-weight: bold;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s linear;
+}
+
+#sign-up:hover {
+  background-color: var(--button-color);
+}
+
+#sign-up:active {
+  transform: scale(0.98);
+}
+.sasa-img {
+  width: 50px;
+  height: 50px;
+  background-color: var(--font-color);
+  mask: url('/img/img/img_sasa.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/img/img_sasa.svg') no-repeat center center/contain;
+  z-index: -1;
+}
+
+.sasa-img.top {
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  transform: rotateZ(-30deg);
+}
+.sasa-img.btm {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 100%;
+  right: 0;
+  transform: rotateZ(30deg);
+}
+
+/* card block */
+.card-block {
+  margin: 50px auto;
+}
+
+.ranking-title {
+  font-family: 'Ibarra Real Nova', serif;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cd-pane {
+  opacity: 0.9;
+}
+
+@media (max-width: 1070px) {
+  .card-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 80%;
+    margin-left: 50px;
+  }
+
+  .card-block {
+    margin-top: 150px;
+  }
+}

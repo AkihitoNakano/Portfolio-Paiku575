@@ -1,0 +1,26 @@
+{{>header}}
+    <link rel="stylesheet" href="/css/authentication.css">
+    <title>アカウント認証</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="logo"></div>
+      <p>パスワード再設定</p>
+      <h2>新しいパスワードを入力してください</h2>
+      <div class="change-pass">
+        <form onsubmit="return false">
+          <input type="password" class="check-pass" id="old-pass" placeholder="新しいパスワードを6文字以上で入力して下さい">
+          <input type="password" class="check-pass" id="new-pass" placeholder="確認のためもう一度入力して下さい">
+          <button id="submit">パスワードを更新する</button>
+        </form>
+      </div>
+      <div class="message"></div>
+    </div>
+    <a href="https://paiku575.com"><small>paiku.com</small></a>
+  </main>
+ 
+
+    <script type="module" src="/js/authentication.js"></script>
+</body>
+</html>

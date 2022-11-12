@@ -1,0 +1,45 @@
+<div class='profile'>
+  <div class='self-profile'>
+    <div class='profile-upper-block'>
+      <div class='user-account'>
+        <img src='{{userProfile.avatar}}' alt='profile icon' />
+        <p class='user-name'>{{userProfile.displayName}}</p>
+        <p class='account-name'>@{{userProfile.accountName}}</p>
+      </div>
+      <div id='user-titles-block'>
+        <div class='user-titles'>
+          <p class='titles-name' id='follow-number'>フォロー</p>
+          <p class='titles-value'>{{userProfile.follows}}</p>
+        </div>
+        <div class='user-titles'>
+          <p class='titles-name' id='followed-number'>フォロワー</p>
+          <p class='titles-value'>{{userProfile.followers}}</p>
+        </div>
+        <div class='user-titles'>
+          <p class='titles-name' id='rank-number'>等級</p>
+          <p class='titles-value'>{{userProfile.rank}}</p>
+        </div>
+
+      </div>
+    </div>
+    <p class='self-introduction'>{{userProfile.selfIntroduction}}</p>
+    <p class='createdAt'>{{userProfile.date}}に作成しました。場所 - {{userProfile.place}}</p>
+  </div>
+  <div class='theme-buttons'>
+    <button id='profile-contents'>句</button>
+    <button id='hearts'>お気に入り</button>
+    <button id='votes'>投票した</button>
+  </div>
+  <div class='settings'>
+    {{#if ownerIsMe}}
+      <button class='custom-btn settings-btn'>その他の設定 ▼</button>
+    {{else}}
+      {{#if isFollow}}
+        <button class='custom-btn follow-btn unfollow'><strong>フォロー解除</strong></button>
+      {{else}}
+        <button class='custom-btn follow-btn follow'><strong>フォローする</strong></button>
+      {{/if}}
+    {{/if}}
+  </div>
+
+</div>

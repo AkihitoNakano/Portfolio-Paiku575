@@ -1,0 +1,43 @@
+{{>header}}
+    <link rel="stylesheet" href="/css/sign-up.css">
+    <title>Sign up</title>
+</head>
+<body>
+    {{>indexHeader}}
+    <main>
+        <div class="container">
+            <form id="form" class="form">
+                <h2>Paikuに登録</h2>
+                <div class="form-control">
+                    <label for="username">アカウント名</label>
+                    <input type="text" id="username" placeholder="英数字3文字以上15文字以内" , maxlength="15">
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">メールアドレス</label>
+                    <input type="text" id="email" placeholder="メールアドレスを入力して下さい" autocomplete="on">
+                    <small>Error message</small>
+                </div>
+                <div class="form-control"> 
+                    <label for="password">パスワード</label>
+                    <input type="password" id="password" placeholder="英数字7文字以上15文字以内",  maxlength="15">
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">確認のためもう一度パスワードを入力</label>
+                    <input type="password" id="password2" placeholder="確認のためパスワードをもう一度入力して下さい", maxlength="15">
+                    <small>Error message</small>
+                </div>
+                <button id="submit">送信</button>
+            </form>
+        </div>
+    </main>
+    {{>indexFooter}}
+
+    <div class="bg-img img-sasa"></div>
+    <div class="bg-img img-panda"></div>
+
+    <script type="module" src="/js/signUp.js"></script>
+
+</body>
+</html>

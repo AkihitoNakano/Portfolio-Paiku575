@@ -1,0 +1,55 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+/* base color */
+@import url('./partials/root-color.css');
+/* button */
+@import url('./partials/round-button.css');
+/* navigation */
+@import url('./partials/nav.css');
+/* self-icon */
+@import url('./partials/self-icon.css');
+
+/* base-layout */
+@import url('./partials/base-layout.css');
+/* left-side-bar */
+@import url('./partials/left-side.css');
+/* right-side-bar */
+@import url('./partials/right-side.css');
+
+/* setting account*/
+@import url('./partials/setting-account.css');
+
+/* mobile base */
+@import url('./mobile/mobile-base.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.card-container {
+  padding: 10px;
+}

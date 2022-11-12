@@ -1,0 +1,34 @@
+{{>header}}
+    <link rel="stylesheet" href="/css/sign-up.css">
+    <title>Login</title>
+</head>
+<body>
+    {{>indexHeader}}
+    <div class="container">
+        <div class="error-container"></div>
+        <form id="form" class="form">
+        <h2>Paikuにログイン</h2>
+            <div class="form-control">
+                <label for="email">メールアドレス</label>
+                <input id="email" type="text" required>
+            </div>
+            <div class="form-control">
+                <label>パスワード</label>
+                <input id="password" type="password" required>
+            </div>
+
+            <button id="submit" class="btn">ログイン</button>
+
+            <small class="confirm-pass">パスワードを忘れましたか？ <a href="/user/settings/forgot-password">確認メールの送信</a> </small>
+        </form>
+    </div>
+
+    {{>indexFooter}}
+
+    <div class="bg-img img-sasa"></div>
+    <div class="bg-img img-panda"></div>
+    
+
+    <script type="module" src="/js/login.js"></script>
+</body>
+</html>

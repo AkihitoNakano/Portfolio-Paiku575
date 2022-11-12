@@ -1,0 +1,40 @@
+header {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  background-color: var(--font-color);
+  width: 80px;
+  height: 50px;
+  margin-left: 50px;
+  mask: url('/img/img/logo_paiku.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/img/logo_paiku.svg') no-repeat center center/contain;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.link-container {
+  margin-right: 50px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 0 15px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--title-color);
+}

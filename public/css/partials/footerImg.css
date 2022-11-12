@@ -1,0 +1,23 @@
+.bg-img {
+  position: fixed;
+  z-index: -1;
+}
+
+.img-sasa {
+  bottom: 120px;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  background-color: var(--font-color);
+  mask: url('/img/img/img_sasa_A.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/img/img_sasa_A.svg') no-repeat center center/contain;
+}
+.img-panda {
+  bottom: 80px;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background-color: var(--font-color);
+  mask: url('/img/img/img_panda.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/img/img_panda.svg') no-repeat center center/contain;
+}

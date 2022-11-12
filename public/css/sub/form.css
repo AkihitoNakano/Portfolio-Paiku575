@@ -1,0 +1,106 @@
+.form-container h3 {
+  color: var(--font-color);
+  margin: 20px 0 20px;
+}
+
+.message {
+  font-weight: bold;
+}
+
+.message.ok {
+  color: var(--button-color);
+}
+
+.message.alert {
+  color: var(--alert-color);
+}
+
+#form {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /* border: 1px solid var(--font-color); */
+  border-radius: 10px;
+  padding: 40px;
+  margin-top: 100px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+#form label {
+  color: var(--font-color);
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#form label::before {
+  content: '|';
+  color: var(--button-color);
+  background-color: var(--button-color);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#form input {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  font-size: 15px;
+  height: 50px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+#form input:focus {
+  outline: none;
+  background-color: var(--tagHover-color);
+}
+
+#form textarea {
+  color: var(--font-color);
+  background-color: var(--bg-color);
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  font-size: 15px;
+  width: 100%;
+  height: 150px;
+}
+
+#form textarea:focus {
+  outline: none;
+  background-color: var(--tagHover-color);
+}
+
+#form button {
+  cursor: pointer;
+  background-color: var(--bg-color);
+  height: 35px;
+  border: 1px solid var(--font-color);
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+#form button:hover {
+  color: #fff;
+  background-color: var(--button-color);
+  font-weight: bold;
+}
+
+#form button:disabled:hover {
+  cursor: not-allowed;
+}
+
+@media (max-width: 1050px) {
+  #form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  #form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,140 @@
+/* leftの値はjavascriptで管理 */
+.left-side-container {
+  position: fixed;
+  top: 0;
+  left: calc((100% - 1440px) / 2);
+  /* left: 0px; */
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--font-color);
+  height: 100vh;
+  width: 250px;
+  padding-top: 50px;
+}
+
+.ticket-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.icon {
+  background-color: var(--font-color);
+  width: 30px;
+  height: 30px;
+}
+
+.ticket-left {
+  mask: url('/img/icon/icon_ticket.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_ticket.svg') no-repeat center center/contain;
+  text-align: center;
+}
+
+#ticket-num {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.left-side-container ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 10px;
+}
+
+.left-side-container li {
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.left-side-container ul a {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--font-color);
+  padding: 10px;
+}
+
+.left-side-container li a:hover {
+  border-radius: 30px;
+  /* padding: 15px; */
+  color: #fff;
+  background-color: var(--hover-color);
+}
+
+/* iconに切り替わるレスポンシブ */
+
+.icon-container {
+  display: none;
+  margin-top: 20px;
+}
+
+.left-icon {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.link {
+  cursor: pointer;
+  background-color: var(--font-color);
+}
+
+.link:hover {
+  background-color: var(--hover-color);
+}
+
+.icon-container .icon-ticket-num {
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid var(--font-color);
+  padding-top: 3px;
+}
+
+.profile-link {
+  mask: url('/img/icon/icon_profile.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_profile.svg') no-repeat center center/contain;
+}
+
+.settings-link {
+  mask: url('/img/icon/icon_setting.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_setting.svg') no-repeat center center/contain;
+}
+
+@media (max-width: 1439px) {
+  .left-side-container {
+    left: 0;
+    width: 70px;
+  }
+  .ticket-wrap {
+    display: none;
+  }
+
+  .left-side-container ul {
+    display: none;
+  }
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-icon {
+    border-radius: 50%;
+  }
+}
+
+/* モバイル */
+@media (max-width: 420px) {
+  .left-side-container {
+    display: none;
+  }
+}

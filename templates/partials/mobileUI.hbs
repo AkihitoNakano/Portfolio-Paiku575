@@ -1,0 +1,44 @@
+{{! mobile footer navigation }}
+<div class='mb-nav'>
+  <div class='mb-nav-wrap'>
+    <div class='mb-icon mb-others'></div>
+    <a href='/'><div class='mb-icon mb-home'></div></a>
+    <a href='/ranking'><div class='mb-icon mb-ranking'></div></a>
+    <a href='/theme'><div class='mb-icon mb-theme'></div></a>
+  </div>
+</div>
+
+{{! mobile sidebar  }}
+<div class='mb-side-bar'>
+  <div class='mb-side-bar-wrap'>
+
+    <div class='mb-prof-self'>
+      <img src='{{userProfile.avatar}}' alt='' />
+      <h3>{{userProfile.displayName}}</h3>
+      <p>{{userProfile.accountName}}</p>
+    </div>
+
+    <div class='mb-list-wrap'>
+      <div class='mb-side-icon mb-ticket-num'></div>
+      <p>チケット残り回数: <span>{{tickets}}</span></p>
+    </div>
+
+    <div class='mb-list-wrap'>
+      <div class='mb-side-icon mb-profile'></div>
+      {{#if me}}
+        <a href='/{{me.accountName}}'>プロフィール</a>
+      {{else}}
+        <a href='/{{userProfile.accountName}}'>プロフィール</a>
+      {{/if}}
+    </div>
+
+    <div class='mb-list-wrap'>
+      <div class='mb-side-icon mb-setting'></div>
+      <a href='/user/settings'>設定</a>
+    </div>
+
+    <div class='mb-close'>close</div>
+  </div>
+</div>
+
+{{! push form }}

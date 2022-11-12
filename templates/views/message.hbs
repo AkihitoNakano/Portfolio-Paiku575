@@ -1,0 +1,50 @@
+{{>header}}
+    <title>{{contents.title}}</title>
+    <link rel="stylesheet" href="/css/partials/root-color.css">
+
+    <style>
+      * {
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+      }
+      body {
+          background-color: var(--bg-color);
+          height: 100vh;
+          margin: 0;
+      }
+      main {
+          color: var(--font-color);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+      }
+      small {
+        color: #eee;
+        margin-top: 20px;
+      }
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <main>	
+      <h1>status code: {{contents.code}}</h1>
+      <h3>{{contents.message}}</h3>
+      <small><a href="//paiku575.com">paiku575.com</a></small>
+    </main>
+
+
+
+  
+    <script type="module" src="/js/maintenance.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+</body>
+</html>

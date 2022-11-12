@@ -1,0 +1,31 @@
+{{>header}}
+    <link rel="stylesheet" href="/css/index-describes.css">
+    <title>プライバシーポリシー、利用規約</title>
+</head>
+<body>
+    {{>indexHeader}}
+    {{>describesSelect}}
+    <div class="container">
+        {{#if privacy}}
+        {{>privacy}}
+        {{/if}}
+        {{#if about}}
+        {{>about}}
+        {{/if}}
+        {{#if termsOfService}}
+        {{>termsOfService}}
+        {{/if}}
+        {{#if form}}
+        {{>form}}
+        {{/if}}
+    </div>
+
+    {{>indexFooter}}
+
+    <div class="bg-img img-sasa"></div>
+    <div class="bg-img img-panda"></div>
+    
+
+    <script type="module" src="/js/indexDescribe.js"></script>
+</body>
+</html>

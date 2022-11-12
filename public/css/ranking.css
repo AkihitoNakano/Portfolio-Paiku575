@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap');
+
+/* base color */
+@import url('./partials/root-color.css');
+/* button */
+@import url('./partials/round-button.css');
+/* navigation */
+@import url('./partials/nav.css');
+/* self-icon */
+@import url('./partials/self-icon.css');
+
+/* base-layout */
+@import url('./partials/base-layout.css');
+/* lef-side-bar */
+@import url('./partials/left-side.css');
+/* right-side-bar */
+@import url('./partials/right-side.css');
+
+/* card */
+@import url('./partials/card.css');
+/* loader */
+@import url('./partials/loading.css');
+/* loading card */
+@import url('./utils/loadingCard.css');
+
+/* mobile base */
+@import url('./mobile/mobile-base.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
+}
+
+.card-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.ranking-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px 0;
+}
+
+h2 {
+  position: relative;
+  top: 50px;
+  font-size: 25px;
+  margin: 20px 0 10px 30px;
+  z-index: 1;
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
+  transition: all 0.5 ease-in-out;
+}
+
+.slide-container::-webkit-scrollbar {
+  display: none;
+}
+
+.page-arrow {
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+  margin: 0 10px;
+  z-index: 2;
+  transition: transform 0.1s linear;
+}
+
+.page-arrow.hide {
+  display: none;
+}
+
+.page-arrow:hover {
+  transform: scale(1.2);
+}
+
+.right-scroll {
+  right: 0%;
+}
+
+.cards-wrap {
+  padding-right: 20px;
+  /* margin: 0 10px; */
+}
+
+.cards-wrap:first-child {
+  padding-left: 50px;
+}
+
+.rank-number {
+  position: relative;
+  font-size: 100px;
+  font-weight: bold;
+  top: 50px;
+  left: -30px;
+  z-index: -1;
+  opacity: 0.3;
+}

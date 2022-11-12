@@ -1,0 +1,34 @@
+<div class='push-form-container'>
+  <img src='{{userProfile.avatar}}' alt='icon' class='self-icon' />
+  <div class='push-form'>
+    <input id='push-input' type='text' placeholder='近況を詠む... 例：読点を、打てば分割、句が書ける' />
+    <div class='push-bottom'>
+      <div class='auto-cmp-container'></div>
+      <div class='push-btm-buttons'>
+        <div class='upload-img-container'>
+          <label for='upload-img' class='custom-img-upload'></label>
+          <input type='file' name='img' id='upload-img' />
+          <div class='added-img'><p>+1</p></div>
+        </div>
+        <button id='push-btn'>投稿する</button>
+      </div>
+    </div>
+    <p id='push-error'>文字数を超えています。</p>
+    <div class='push-tags-container'></div>
+  </div>
+  <div class='close-push-form'>キャンセル</div>
+</div>
+<div class='bar-loader'></div>
+
+{{! modal }}
+<div class='modal-preview-img-bg'>
+  <div class='modal-preview-img-wrap'>
+    <div class='file-name'>test-picture.png</div>
+    <small>画像はカードサイズにクロップされます</small>
+    <div class='img-wrap'>
+      <img class='preview-img' src='' alt='image' class='preview-img' />
+      <div class='cancel-btn'>x</div>
+    </div>
+    <button class='img-ok'>OK</button>
+  </div>
+</div>

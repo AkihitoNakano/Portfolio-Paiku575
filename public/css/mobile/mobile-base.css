@@ -1,0 +1,155 @@
+.mb-nav {
+  display: none;
+  position: fixed;
+  background-color: var(--card-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  bottom: 0;
+  width: 100vw;
+  height: 70px;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.mb-nav-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.mb-icon {
+  background-color: var(--font-color);
+  width: 25px;
+  height: 25px;
+}
+
+.mb-home {
+  mask: url('/img/icon/icon_latest.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_latest.svg') no-repeat center center/contain;
+}
+
+.mb-ranking {
+  mask: url('/img/icon/icon_ranking.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_ranking.svg') no-repeat center center/contain;
+}
+
+.mb-theme {
+  mask: url('/img/icon/icon_tag.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_tag.svg') no-repeat center center/contain;
+}
+
+.mb-others {
+  mask: url('/img/icon/icon_option.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_option.svg') no-repeat center center/contain;
+}
+
+/* side bar */
+.mb-side-bar {
+  display: none;
+  position: fixed;
+  background-color: var(--card-color);
+  left: -100%;
+  height: 100vh;
+  width: 75%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
+  transition: left 0.4s ease-out;
+  z-index: 3;
+}
+
+.mb-side-bar.show {
+  left: 0;
+}
+
+.mb-side-bar-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.mb-prof-self {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 40px;
+}
+
+.mb-prof-self img {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--font-color);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.mb-prof-self h3 {
+  font-size: 1.5rem;
+}
+
+.mb-list-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.mb-list-wrap span {
+  font-weight: bold;
+}
+
+.mb-list-wrap a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.mb-side-icon {
+  background-color: var(--font-color);
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.mb-ticket-num {
+  mask: url('/img/icon/icon_ticket.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_ticket.svg') no-repeat center center/contain;
+}
+
+.mb-profile {
+  mask: url('/img/icon/icon_profile.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_profile.svg') no-repeat center center/contain;
+}
+
+.mb-setting {
+  mask: url('/img/icon/icon_setting.svg') no-repeat center center / contain;
+  -webkit-mask: url('/img/icon/icon_setting.svg') no-repeat center center/contain;
+}
+
+.mb-close {
+  position: absolute;
+  color: var(--font-color);
+  bottom: 0;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* モバイル */
+@media (max-width: 420px) {
+  .create-card-btn {
+    display: flex;
+  }
+  .mb-nav {
+    display: flex;
+  }
+  .mb-side-bar {
+    display: flex;
+  }
+}
