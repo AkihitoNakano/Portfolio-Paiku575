@@ -8,7 +8,7 @@
 
 **趣味と勉学目的で作成した Twitter ライクな 575 投稿アプリケーションを解説した記事になります**。
 
-### New!
+<br>
 
 新しい Web アプリケーション Next.js, Node/TypeScript で作成したレシピ作成アプリを公開しました！
 
@@ -16,9 +16,13 @@
 
 こちらの Paiku575 の　記事内容は現在のスキルや考え方と比べて古いものとなるため先に上記のポートフォリオをご覧いただけますと幸いです。
 
+<br>
+
 #### 注意点
 
 <u>この記事の内容はアプリケーション作成当時(2022 年 08 月時点)の考えをまとめた内容であり、現在から見ると間違いのある内容が含まれている部分もございますが当時の思考を反映しそのまま記述しております。その点ご了承いただきますようお願いします</u>
+
+<br>
 
 ---
 
@@ -44,6 +48,8 @@
 11. [最後に](#atLast)
 12. [振り返ってみて](#lookBack)
 
+<br>
+
 ## 開発者について
 
 ---
@@ -56,6 +62,8 @@
 - 台湾に住んでいたことがあり中国語が少し話せる
 
 <a id="overview"></a>
+
+<br>
 
 ## 1.アプリの概要
 
@@ -139,6 +147,8 @@ twitter からインスパイアを受けたアプリになるので多くの機
 
 <a id="planning"></a>
 
+<br>
+
 ## 2. 企画
 
 ---
@@ -197,6 +207,8 @@ MBS テレビで放映されている[プレバト](https://www.mbs.jp/p-battle/
 ![picture 15](images/15edb3795afbf578a4ab37def97c0cd71b5092305411cab1ed1433278034d417.png)
 
 <a id="function"></a>
+
+<br>
 
 ## 3. アプリの機能
 
@@ -417,6 +429,8 @@ const contentsSchema = new mongoose.Schema(
 
 <a id="skillStacks"></a>
 
+<br>
+
 ## 4. 使用した技術スタック
 
 ---
@@ -459,12 +473,15 @@ const contentsSchema = new mongoose.Schema(
 
 <a id="systemStructure"></a>
 
+<br>
+
 ## 5. システム構成図
 
 ---
 
 ローカルの開発環境からデプロイまでのシステム構成図
-![picture 2](images/ff415dbf04e2f1a8855b3409eadd3935e41366086bb836d6239e35219a7ea16c.png)
+
+![picture 1](images/e32d4c9f1d1bfb17b6f935c7636ced4090f682af378aaa533d40f19167c1f3ce.png)
 
 <a id="tools"></a>
 
@@ -487,6 +504,8 @@ JavaScript/ TypeScript / Python / Node.js / Express / Flask / HTML-CSS / MongoDB
 vs code / pycharm / postman / adobe XD / Ai
 
 <a id="efforts"></a>
+
+<br>
 
 ## 7. 頑張ったところ、難しかった実装
 
@@ -648,6 +667,8 @@ delFollow[[ユーザーAのフォローを削除]]
 
 <a id="futureFunctions"></a>
 
+<br>
+
 ## 8. 実装予定の機能
 
 ---
@@ -661,6 +682,8 @@ delFollow[[ユーザーAのフォローを削除]]
 - さらに余裕があれば TypeScript で書き直したい
 
 <a id="howLearning"></a>
+
+<br>
 
 ## 9. どのように学習したか
 
@@ -698,12 +721,14 @@ https://www.udemy.com/share/102yzo3@hb0izIxWgdRAVULQM4UiiqmIWUH1VpeOhV7AfpqcNNkR
 https://www.udemy.com/share/103Pje3@EgnqpW-fcY6nu-Dy53wA1trT3ZbSoNyRlg3WLZ_-D7KmDC6ak16p34xjIimQCx2E-g==/
 
 どちらも同じ講師のコースです
-Vanilla の JavaScrip を使って解説しているため、JavaScrip 初級の人でも内容が理解しやすいです。
+Vanilla の JavaScrip を使って解説しているため、JavaScrip 初級の人でも内容が理解しやすいと思いました。
 どのセクションも実践ですぐに使えるような内容ばかりで、尚且つ非常にシンプルで無駄がない方法でコードが書かれており、感動した覚えがあります。
 見た目も非常にモダンであるため楽しくコードを書くことができました。
 ただし解説が非常に早いので慣れていない場合は一時停止しながら試聴する必要があるかもしれません
 
 <a id="futureStudy"></a>
+
+<br>
 
 ## 10. 今後の学習
 
@@ -751,6 +776,8 @@ touch, cat, mkdir, cd, ls, rm など簡単な内容であれば日々使用し�
 
 <a id="atLast"></a>
 
+<br>
+
 ## 最後に
 
 ---
@@ -767,7 +794,7 @@ touch, cat, mkdir, cd, ls, rm など簡単な内容であれば日々使用し�
 
 前職ではディレクションの役職に就く機会があり主体的にスタッフとコミュニケーションを取りながら仕事を進めた経験があります
 
-また専門学校で非常勤の講師を 10 年余り務めており人に教えることも経験しております（教えることが得意かと言われると最適ではないと自分では考えます..）
+また専門学校で非常勤の講師を 10 年余り務めており人に教えることも経験しております
 
 #### 3. 新しい技術へのキャッチアップ
 
@@ -778,15 +805,18 @@ touch, cat, mkdir, cd, ls, rm など簡単な内容であれば日々使用し�
 この Paiku575 を開発した後、反省点を活かして Node.js/TypeScript と Next.js/TypeScript を使用してレシピ検索アプリケーションを作りましたので、お時間がある際は是非こちらもみていただけると幸いです。
 
 **Good Food**
-https://github.com/AkihitoNakano/GoodFood-Portfolio
+
+👉 https://github.com/AkihitoNakano/GoodFood-Portfolio
 
 最後までお読みいただき、ありがとうございました！
 
----
-
 <a id="lookBack"></a>
 
+<br>
+
 ## 振り返ってみて
+
+---
 
 1. セキュリティ
 2. データベースの設計
