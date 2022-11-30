@@ -12,7 +12,7 @@
 
 新しい Web アプリケーション Next.js, Node/TypeScript で作成したレシピ作成アプリを公開しました！
 
-👉[印刷できるレシピサイト Good Food](https://good-food-one.vercel.app/)
+👉[印刷できるレシピサイト Good Food](https://github.com/AkihitoNakano/GoodFood-Portfolio)
 
 こちらの Paiku575 の　記事内容は現在のスキルや考え方と比べて古いものとなるため先に上記のポートフォリオをご覧いただけますと幸いです。
 
