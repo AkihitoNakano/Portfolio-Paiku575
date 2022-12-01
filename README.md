@@ -84,6 +84,10 @@ twitter からインスパイアを受けたアプリになるので多くの機
 
 ### (1). アプリに登録する
 
+> サンプルのアカウントでご使用頂けます。
+> email: kinoko@google.com
+> pass: sample123
+
 1.  **Sign Up(新規登録)** ボタンからログイン画面に飛んでフォームに必要な情報を入力します
 
 ![picture 5](images/2efab30cecc2ea7217407b701010ff41a58ee08718742d2d8a1c6ef23f61b49e.png)
